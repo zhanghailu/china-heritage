@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="中国的世界文化遗产 · 作业整理：42 处世界文化遗产正式名、年份、省市、简介与配图，支持搜索与按地区筛选。">
+  <title>中国的世界文化遗产 · 作业整理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="hero" aria-label="作业封面">
+    <div class="hero__media" aria-hidden="true">
+      <img src="images/forbidden-city.jpg" alt="" width="1600" height="900">
+      <div class="hero__shade"></div>
+    </div>
+    <div class="wrap hero__content">
+      <h1 class="hero__brand">中国的世界文化遗产 · 作业整理</h1>
+      <p class="hero__tagline">42 处世界文化遗产，整理完成</p>
+      <p class="hero__lead">正式名、列入年份、省市与一两句介绍都在这里；用搜索或地区筛选，挑你需要的条目交作业。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#catalog">开始筛选</a>
+        <a class="btn btn--ghost" href="#about">作业说明</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="wrap about" aria-labelledby="about-title">
+      <div class="section-head">
+        <h2 id="about-title">作业说明</h2>
+        <p>本页只收录 UNESCO「世界文化遗产」（Cultural）。泰山、黄山等混合遗产、九寨沟等自然遗产不在主列表。</p>
+      </div>
+      <ul class="about__points">
+        <li>每条包含：正式名、年份、省市、一句话介绍、配图。</li>
+        <li>可用搜索框或地区标签，自己筛选后抄写或截图。</li>
+        <li>交作业前请再到 UNESCO / 国家文物局核对正式名称与年份。</li>
+      </ul>
+    </section>
+
+    <section id="catalog" class="wrap catalog" aria-labelledby="catalog-title">
+      <div class="section-head">
+        <h2 id="catalog-title">遗产目录</h2>
+        <p>共 42 处。搜索名称、省市或年份；也可按地区只看一块。</p>
+      </div>
+
+      <div class="toolbar" role="search">
+        <label class="search">
+          <span class="visually-hidden">搜索遗产</span>
+          <input id="search-input" type="search" placeholder="搜索名称、省市、年份…" autocomplete="off">
+        </label>
+        <div id="region-filters" class="filters" role="toolbar" aria-label="按地区筛选"></div>
+        <p id="result-meta" class="result-meta" aria-live="polite"></p>
+      </div>
+
+      <div id="site-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>配图来自 Wikimedia Commons（公有领域或 Creative Commons）。资料依据 UNESCO 中国缔约国名录与国家文物局公开信息（约 2026 年 11 月），供学生作业整理参考。</p>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="回到顶部">↑</button>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
